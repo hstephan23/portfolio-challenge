@@ -19,30 +19,67 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harrison Stephan's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 <body>
     <header>
-        <h1>Harrison Stephan</h1>
-        <a href="">About Me</a>
-        <a href="">Work</a>
-        <a href="">Contact Me</a>
-        <a href="">Resume</a>
+        <section id="name_and_portrait">
+            <h1>Harrison Stephan</h1>
+            <figure>
+                <img src="./assets/self_portrait.jpeg" alt="Portrait of Harrison Stephan" id="portrait">
+            </figure>
+        </section>
+        <section id="header_content">
+            <a href="#about_me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact_me">Contact Me</a>
+            <a href="">Resume</a>
+        </section>
     </header>
     <main>
-        <h2>My Work:</h2>
-        <h3>Surf Report</h3>
-        <p>MERN Stack</p>
-        <h3>LED Wall</h3>
-        <p>Mode/IoT</p>
-        <h3>Calculator</h3>
-        <p>React/Javascript/CSS</p>
-        <h3>Pastel Puzzles</h3>
-        <p>MERN Stack</p>
-        <h3>Run Buddy</h3>
-        <p>HTML/CSS</p>
+        <h2 id="about_me">About Me</h2>
+        <p>I am an up and coming developer. I am a current student at BYU studying Business and Technology Management. 
+            I will graduate in December of 2024 at the current pace that I am going. I have some work experience in the IT field.
+            I am taking a full-stack coding bootcamp through UC Berkeley to further develop my skills and be better equiped for the development world.
+        </p>
+        <p>I am mosts confident in my Python skills, but have been developing my Javscript and web development skills recently. 
+            I have been coding for a little over a year and a half now and have fallen in love with it. It is something that I find very enjoyable
+            and something that I want to turn into a career. I changed my major a lot in college and have a lot of various expereinces because of that. 
+            I wouldn't change the pathway that I have been on, because it has led me here.
+        </p>
+        <section>
+            <h2 id="work">My Work:</h2>
+            <div class="grid">
+                <a id="surf_report" href="">
+                    <img src="" alt="Image of a beach" class="images">
+                    <h3>Surf Report</h3>
+                    <p>MERN Stack</p>
+                </a>
+                <a id="led_wall" href="">
+                    <img src="" slt="Image of LED wall" class="images">
+                    <h3>LED Wall</h3>
+                    <p>Mode/IoT</p>
+                </a>
+                <a id="calculator" href="">
+                    <img src="" alt="Image of calculator" class="images">
+                    <h3>Calculator</h3>
+                    <p>React/Javascript/CSS</p>
+                </a>
+                <a id="pastel_puzzles" href="">
+                    <img src="" alt="Image of puzzle" class="images">
+                    <h3>Pastel Puzzles</h3>
+                    <p>MERN Stack</p>
+                </a>
+                <a id="run_buddy" href="">
+                    <img src="" alt="Image of runner" class="images">
+                    <h3>Run Buddy</h3>
+                    <p>HTML/CSS</p>
+                </a>
+            </div>
+        </section>
     </main>
     <footer>
-        <h2>Contact Me</h2>
+        <h2 id="contact_me">Contact Me</h2>
         <p>208.297.0539</p>
         <p>harrison@stephanclan.com</p>
         <p>Github</p>
