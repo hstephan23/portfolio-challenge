@@ -15,11 +15,37 @@ header {
     padding: 5px;
     background-color: #002c58;
 }
+
 a {
     text-decoration: none;
 }
 
+body {
+    background-color:rgb(209, 243, 255);
+}
+
 /*id selectors*/
+#paragraphs {
+    display: grid;
+    grid-template-areas: 
+        "about paragraph1 paragraph1 paragraph1"
+        "about paragraph2 paragraph2 paragraph2"
+}
+
+#about_me {
+    grid-area: about;
+    border-right-style: solid;
+    border-right-width: 5px;
+}
+
+#paragraph1 {
+    grid-area: paragraph1;
+    padding-bottom: 5px;
+}
+#paragraph2 {
+    grid-area: paragraph2;
+    padding-top: 5px;
+}
 #name {
     background-color: lightskyblue;
 }
