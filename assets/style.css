@@ -13,21 +13,37 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    background-color: #002c58;
 }
 a {
     text-decoration: none;
 }
 
 /*id selectors*/
+#name {
+    background-color: lightskyblue;
+}
+
 #portrait {
     height: 50px;
     width: auto;
 }
 
+#subtitle {
+    text-align: right;
+    background-color: lightskyblue;
+    margin-left: 75%;
+}
+
 #heading_links {
     text-align: right;
 }
-
+#container {
+    display: grid;
+    background-image: url('./background.jpeg');
+    padding: 5%;
+    background-size: cover;
+}
 /*class selectors*/
 .heading {
     border: solid 5px lightskyblue;
