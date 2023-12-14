@@ -72,7 +72,7 @@ footer {
     text-align: right;
     background-color: rgb(162, 230, 255);
     margin-left: 75%;
-    padding-right: 10px;
+    background-size: cover;
 }
 
 #heading_links {
@@ -94,6 +94,7 @@ footer {
         "work pastel_puzzles run_buddy"
     ;
     grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     padding-bottom: 20px;
 }
@@ -108,7 +109,6 @@ footer {
 #surf_report {
     grid-area: surf_report;
     display: grid;
-    place-items: center;
     height: 100%;
     width: 100%;
     position: relative;
@@ -118,7 +118,6 @@ footer {
 #led_wall {
     grid-area: led_wall;
     display: grid;
-    place-items: center;
     height: 100%;
     width: 100%;
     position: relative;
@@ -128,7 +127,6 @@ footer {
 #calculator {
     grid-area: calculator;
     display: grid;
-    place-items: center;
     height: 100%;
     width: 100%;
     position: relative;
@@ -140,13 +138,12 @@ footer {
     background-color: #94b7d9;
     border: 5px solid rgb(162, 230, 255);
     height: 100%;
-    width: 100%;
+    width: 100%
 }
 
 #run_buddy {
     grid-area: run_buddy;
     display: grid;
-    place-items: center;
     height: 100%;
     width: 100%;
     position: relative;
@@ -167,33 +164,12 @@ footer {
 }
 /*class selectors*/
 .heading {
-    border: solid 5px rgb(162, 230, 255);
-    border-right-style: none;
-    border-left-style: none;
-    border-top-style: none;
+    border-bottom: solid 5px rgb(162, 230, 255);
     color: rgb(162, 230, 255);
 }
 
 .largerimage {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    border: 5px solid rgb(162, 230, 255);
-}
-
-.front_text {
-    z-index: 1;
-    background-color: rgb(162, 230, 255);
-}
-
-
-.images {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: center;
@@ -201,5 +177,34 @@ footer {
     border: 5px solid rgb(162, 230, 255);
 }
 
+.front_text {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(162, 230, 255);
+    text-align: left;
+    margin-top: 80%;
+}
 
 
+.images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+    z-index: 0;
+    border: 5px solid rgb(162, 230, 255);
+}
+
+.surf_text {
+    margin-right: 80.5%;
+}
+
+.puzzle_text {
+    margin-right: 61%;
+    margin-top: 80%
+}
+
+.footer {
+    border-bottom: 5px solid;
+    padding-left: 5px;
+}
