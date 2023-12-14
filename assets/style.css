@@ -17,12 +17,16 @@ header {
     background-color: #002c58;
 }
 
+h2 {
+    font-size: 40px;
+}
 a {
     text-decoration: none;
 }
 
 body {
     background-color:rgb(249, 249, 249);
+    font-size: 20px;
 }
 
 footer {
@@ -213,8 +217,24 @@ footer {
     border-bottom: 5px solid;
     padding-left: 5px;
 }
+@media screen and (max-width: 2560px) {
+    .surf_text {
+        margin-right: 74.5%;
+    }
+}
+@media screen and (max-width: 820px) {
+    #contact_me {
+        font-size: 30px;
+    }
+    .front_text {
+        margin-right: 30%;
+    }
+    .surf_text {
+        margin-right: 64.5%;
+    }
+}
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 540px) {
     .front_text {
         margin: 0;
         padding: 0;
@@ -223,7 +243,18 @@ footer {
         background-color: rgb(162, 230, 255);
     }
     #subtitle {
-        margin-left: 50%;
+        margin-left: 40%;
     }
-
+    h2 {
+        font-size: 30px;
+    }
+    body {
+        font-size: 15px;
+    }
+    #contact_me {
+        font-size: 23.75px;
+    }
+    #work {
+        font-size: 33px;
+    }
 }
