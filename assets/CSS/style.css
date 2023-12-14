@@ -82,9 +82,10 @@ footer {
 #heading_links {
     text-align: right;
 }
+
 #container {
     display: grid;
-    background-image: url('./background.jpeg');
+    background-image: url('../images/background.jpeg');
     padding: 5%;
     background-size: cover;
 }
