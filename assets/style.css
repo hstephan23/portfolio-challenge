@@ -28,23 +28,26 @@ body {
 #paragraphs {
     display: grid;
     grid-template-areas: 
-        "about paragraph1 paragraph1 paragraph1"
-        "about paragraph2 paragraph2 paragraph2"
+        "about paragraph1 paragraph1"
+        "about paragraph2 paragraph2";
 }
 
 #about_me {
     grid-area: about;
     border-right-style: solid;
     border-right-width: 5px;
+    padding-right: 5px;
 }
 
 #paragraph1 {
     grid-area: paragraph1;
     padding-bottom: 5px;
+    padding-left: 5px;
 }
 #paragraph2 {
     grid-area: paragraph2;
     padding-top: 5px;
+    padding-left: 5px;
 }
 #name {
     background-color: lightskyblue;
@@ -70,6 +73,41 @@ body {
     padding: 5%;
     background-size: cover;
 }
+
+#work_pieces {
+    display: grid;
+    grid-template-areas: 
+        "work surf_report surf_report"
+        "work surf_report surf_report"
+        "work led_wall calculator"
+        "work pastel_puzzles run_budy"
+    ;
+}
+
+#work {
+    grid-area: work;
+}
+
+#surf_report {
+    grid-area: surf_report;
+}
+
+#led_wall {
+    grid-area: led_wall;
+}
+
+#calculator {
+    grid-area: calculator;
+}
+
+#pastel_puzzles {
+    grid-area: pastel_puzzles;
+}
+
+#run_buddy {
+    grid-area: run_buddy;
+}
+
 /*class selectors*/
 .heading {
     border: solid 5px lightskyblue;
