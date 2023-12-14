@@ -181,9 +181,10 @@ footer {
     background-color: rgb(162, 230, 255);
     text-align: left;
     margin-top: 80%;
-    margin-right: 60%;
+    margin-right: 50%;
     margin-bottom: 5%;
     padding: 5px;
+    padding-left: 5%;
 }
 
 
@@ -196,13 +197,14 @@ footer {
 }
 
 .surf_text {
-    margin-right: 80.5%;
+    margin-right: 70.5%;
     margin-bottom: 12.5%;
     padding: 5px;
+    padding-left: 2.5%
 }
 
 .puzzle_text {
-    margin-right: 61%;
+    margin-right: 51%;
     margin-top: 80%
 }
 
