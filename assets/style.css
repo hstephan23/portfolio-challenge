@@ -21,18 +21,18 @@ a {
 }
 
 body {
-    background-color:rgb(209, 243, 255);
+    background-color:rgb(249, 249, 249);
 }
 
 footer {
     display: grid;
     grid-template-rows: auto;
     grid-template-areas: 
-        "contact_me contact_info";
-    grid-template-columns: 0.5fr 2fr;
+        "contact_me contact_info contact_info";
+    grid-template-columns: 0.5fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5px;
+    gap: 20px;
 }
 
 /*id selectors*/
@@ -60,7 +60,7 @@ footer {
     grid-area: paragraph2;
 }
 #name {
-    background-color: lightskyblue;
+    background-color: rgb(162, 230, 255);
 }
 
 #portrait {
@@ -70,8 +70,9 @@ footer {
 
 #subtitle {
     text-align: right;
-    background-color: lightskyblue;
+    background-color: rgb(162, 230, 255);
     margin-left: 75%;
+    padding-right: 10px;
 }
 
 #heading_links {
@@ -106,59 +107,98 @@ footer {
 
 #surf_report {
     grid-area: surf_report;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 #led_wall {
     grid-area: led_wall;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 #calculator {
     grid-area: calculator;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 #pastel_puzzles {
     grid-area: pastel_puzzles;
-    background-color: #60a0e0;
+    background-color: #94b7d9;
+    border: 5px solid rgb(162, 230, 255);
+    height: 100%;
+    width: 100%;
 }
 
 #run_buddy {
     grid-area: run_buddy;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
     
 }
 
 #contact_me {
     border-right-style: solid;
-    border-right-color:#002c58;
     border-right-width: 5px;
     grid-area: contact_me;
+    padding-left: 5px;
 }
 
 #contact_info {
     grid-area: contact_info;
+    text-align: right;
 }
 /*class selectors*/
 .heading {
-    border: solid 5px lightskyblue;
+    border: solid 5px rgb(162, 230, 255);
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
-    color: lightskyblue;
+    color: rgb(162, 230, 255);
 }
 
 .largerimage {
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 0;
     width: 100%;
     height: 100%;
+    border: 5px solid rgb(162, 230, 255);
 }
 
-
-.surf {
-    z-index: 2;
+.front_text {
+    z-index: 1;
+    background-color: rgb(162, 230, 255);
 }
+
 
 .images {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: center;
+    z-index: 0;
+    border: 5px solid rgb(162, 230, 255);
 }
 
 
