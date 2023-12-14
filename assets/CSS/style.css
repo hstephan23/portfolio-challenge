@@ -166,6 +166,11 @@ footer {
     grid-area: contact_info;
     text-align: right;
 }
+
+#pastel_puzzles:hover {
+    border: 7px solid;
+}
+
 /*class selectors*/
 .heading {
     border-bottom: solid 5px rgb(162, 230, 255);
@@ -199,6 +204,14 @@ footer {
     height: 100%;
     z-index: 0;
     border: 5px solid rgb(162, 230, 255);
+}
+
+.largerimage:hover {
+    border: 7px solid;
+}
+
+.images:hover {
+    border: 7px solid;
 }
 
 .surf_text {
