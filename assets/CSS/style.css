@@ -61,9 +61,11 @@ footer {
 #paragraph1 {
     grid-area: paragraph1;
 }
+
 #paragraph2 {
     grid-area: paragraph2;
 }
+
 #name {
     background-color: rgb(162, 230, 255);
 }
