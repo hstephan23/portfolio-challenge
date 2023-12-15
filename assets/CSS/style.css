@@ -187,6 +187,21 @@ footer {
     border: 7px solid;
 }
 
+/*id selectors for resume*/
+#education, 
+#experience,
+#volunteer,
+#skills {
+    display: grid;
+    grid-template-areas: 
+    "heading subtext";
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
 /*class selectors*/
 .heading:hover {
     font-weight: bold;
@@ -240,6 +255,20 @@ footer {
     border-bottom: 5px solid;
     padding-left: 5px;
 }
+
+/*class selectors for Resume*/
+.title {
+    grid-area: heading;
+    border-right: 5px solid;
+    padding-left: 5px;
+}
+
+.subtext {
+    grid-area: subtext;
+}
+
+/* for the screen changes*/ 
+
 @media screen and (max-width: 2560px) {
     .surf_text {
         margin-right: 74.5%;
