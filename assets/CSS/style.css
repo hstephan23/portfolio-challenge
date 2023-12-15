@@ -1,6 +1,15 @@
+/*variables for the sheet*/
+:root {
+    --background-color: rgb(249, 249, 249);
+    --header-footer-background: #002c58;
+    --text-color: #2f5274;
+    --text-header-footer: rgb(162, 230, 255);
+    --puzzle-background: #94b7d9;
+    --border-type: solid;
+}
 /* univeral selector */
 * {
-    color: #2f5274;
+    color: var(--text-color);
     padding: 0;
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -15,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: #002c58;
+    background-color: var(--header-footer-background);
 }
 
 h2 {
@@ -26,7 +35,7 @@ a {
 }
 
 body {
-    background-color:rgb(249, 249, 249);
+    background-color:var(--background-color);
     font-size: 20px;
 }
 /*sets up the footer for all pages*/
@@ -54,7 +63,7 @@ footer {
 
 #about_me {
     grid-area: about;
-    border-right-style: solid;
+    border-right-style: var(--border-type);
     border-right-width: 5px;
     padding-left: 5px;
 }
@@ -68,7 +77,7 @@ footer {
 }
 
 #name {
-    background-color: rgb(162, 230, 255);
+    background-color: var(--text-header-footer);
 }
 
 #portrait {
@@ -78,7 +87,7 @@ footer {
 
 #subtitle {
     text-align: right;
-    background-color: rgb(162, 230, 255);
+    background-color: var(--text-header-footer);
     margin-left: 75%;
 }
 
@@ -110,7 +119,7 @@ footer {
 
 #work {
     grid-area: work;
-    border-right-style: solid;
+    border-right-style: var(--border-type);
     border-right-width: 5px;
     padding-left: 5px;
 }
@@ -144,8 +153,8 @@ footer {
 
 #pastel_puzzles {
     grid-area: pastel_puzzles;
-    background-color: #94b7d9;
-    border: 5px solid rgb(162, 230, 255);
+    background-color: var(--puzzle-background);
+    border: 5px var(--border-type) var(--text-header-footer);
     height: 100%;
     width: 100%
 }
@@ -161,7 +170,7 @@ footer {
 }
 
 #contact_me {
-    border-right-style: solid;
+    border-right-style: var(--border-type);
     border-right-width: 5px;
     grid-area: contact_me;
     padding-left: 5px;
@@ -175,13 +184,13 @@ footer {
 }
 
 #pastel_puzzles:hover {
-    border: 7px solid;
+    border: 7px var(--border-type);
 }
 #led_wall,
 #surf_report,
 #calculator,
 #run_buddy {
-    border: 5px solid rgb(162, 230, 255);
+    border: 5px var(--border-type) var(--text-header-footer);
 }
 
 /*add border to all the images when the user hover overs with a mouse*/
@@ -189,7 +198,7 @@ footer {
 #surf_report:hover,
 #calculator:hover,
 #run_buddy:hover {
-    border: 7px solid;
+    border: 7px var(--border-type);
 }
 
 /*id selectors for resume*/
@@ -212,8 +221,8 @@ footer {
     font-weight: bold;
 }
 .heading {
-    border-bottom: solid 5px rgb(162, 230, 255);
-    color: rgb(162, 230, 255);
+    border-bottom: var(--border-type) 5px var(--text-header-footer);
+    color: var(--text-header-footer);
 }
 
 .largerimage {
@@ -226,7 +235,7 @@ footer {
 .front_text {
     position: relative;
     z-index: 1;
-    background-color: rgb(162, 230, 255);
+    background-color: var(--text-header-footer);
     text-align: left;
     margin-top: 80%;
     margin-right: 50%;
@@ -262,7 +271,7 @@ footer {
 /*class selectors for Resume*/
 .title {
     grid-area: heading;
-    border-right: 5px solid;
+    border-right: 5px var(--border-type);
     padding-left: 5px;
 }
 
@@ -330,7 +339,7 @@ footer {
         padding: 0;
     }
     #pastel_puzzles {
-        background-color: rgb(162, 230, 255);
+        background-color: var(--text-header-footer);
     }
     #subtitle {
         margin-left: 40%;
