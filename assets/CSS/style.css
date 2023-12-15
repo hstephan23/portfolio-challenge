@@ -81,6 +81,7 @@ footer {
 
 #heading_links {
     text-align: right;
+    padding-right: 10px;
 }
 
 #container {
@@ -166,6 +167,7 @@ footer {
 #contact_info {
     grid-area: contact_info;
     text-align: right;
+    padding-right: 10px;
 }
 
 #pastel_puzzles:hover {
