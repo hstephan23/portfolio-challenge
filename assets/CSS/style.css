@@ -6,6 +6,8 @@
     --text-header-footer: rgb(162, 230, 255);
     --puzzle-background: #94b7d9;
     --border-type: solid;
+    --normal-border: 5px;
+    --hover-border: 7px;
 }
 /* univeral selector */
 * {
@@ -64,7 +66,7 @@ footer {
 #about_me {
     grid-area: about;
     border-right-style: var(--border-type);
-    border-right-width: 5px;
+    border-right-width: var(--normal-border);
     padding-left: 5px;
 }
 
@@ -120,7 +122,7 @@ footer {
 #work {
     grid-area: work;
     border-right-style: var(--border-type);
-    border-right-width: 5px;
+    border-right-width: var(--normal-border);
     padding-left: 5px;
 }
 
@@ -154,7 +156,7 @@ footer {
 #pastel_puzzles {
     grid-area: pastel_puzzles;
     background-color: var(--puzzle-background);
-    border: 5px var(--border-type) var(--text-header-footer);
+    border: var(--normal-border) var(--border-type) var(--text-header-footer);
     height: 100%;
     width: 100%
 }
@@ -171,7 +173,7 @@ footer {
 
 #contact_me {
     border-right-style: var(--border-type);
-    border-right-width: 5px;
+    border-right-width: var(--normal-border);
     grid-area: contact_me;
     padding-left: 5px;
 }
@@ -184,13 +186,13 @@ footer {
 }
 
 #pastel_puzzles:hover {
-    border: 7px var(--border-type);
+    border: var(--hover-border) var(--border-type);
 }
 #led_wall,
 #surf_report,
 #calculator,
 #run_buddy {
-    border: 5px var(--border-type) var(--text-header-footer);
+    border: var(--normal-border) var(--border-type) var(--text-header-footer);
 }
 
 /*add border to all the images when the user hover overs with a mouse*/
@@ -198,7 +200,7 @@ footer {
 #surf_report:hover,
 #calculator:hover,
 #run_buddy:hover {
-    border: 7px var(--border-type);
+    border: var(--hover-border) var(--border-type);
 }
 
 /*id selectors for resume*/
@@ -221,7 +223,7 @@ footer {
     font-weight: bold;
 }
 .heading {
-    border-bottom: var(--border-type) 5px var(--text-header-footer);
+    border-bottom: var(--normal-border) var(--border-type) var(--text-header-footer);
     color: var(--text-header-footer);
 }
 
@@ -264,14 +266,14 @@ footer {
 }
 
 .footer {
-    border-bottom: 5px solid;
+    border-bottom: var(--normal-border) var(--border-type);
     padding-left: 5px;
 }
 
 /*class selectors for Resume*/
 .title {
     grid-area: heading;
-    border-right: 5px var(--border-type);
+    border-right: var(--normal-border) var(--border-type);
     padding-left: 5px;
 }
 
