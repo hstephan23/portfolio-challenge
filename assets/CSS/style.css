@@ -171,8 +171,24 @@ footer {
 #pastel_puzzles:hover {
     border: 7px solid;
 }
+#led_wall,
+#surf_report,
+#calculator,
+#run_buddy {
+    border: 5px solid rgb(162, 230, 255);
+}
+
+#led_wall:hover,
+#surf_report:hover,
+#calculator:hover,
+#run_buddy:hover {
+    border: 7px solid;
+}
 
 /*class selectors*/
+.heading:hover {
+    font-weight: bold;
+}
 .heading {
     border-bottom: solid 5px rgb(162, 230, 255);
     color: rgb(162, 230, 255);
@@ -183,7 +199,6 @@ footer {
     width: 100%;
     height: 100%;
     z-index: 0;
-    border: 5px solid rgb(162, 230, 255);
 }
 
 .front_text {
@@ -204,16 +219,8 @@ footer {
     width: 100%;
     height: 100%;
     z-index: 0;
-    border: 5px solid rgb(162, 230, 255);
 }
 
-.largerimage:hover {
-    border: 7px solid;
-}
-
-.images:hover {
-    border: 7px solid;
-}
 
 .surf_text {
     margin-right: 70.5%;
